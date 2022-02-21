@@ -1,0 +1,28 @@
+#videoHeroTextoBoton{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify-items: center; */
+
+}
+.react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #textoBotonHero{
+      padding-top: 20%;
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+
+  }
+  #boton{
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+  }
