@@ -2,10 +2,8 @@ import './Hero.css';
 import React from 'react';
 import ReactPlayer from 'react-player';
 import heroVideo from './cafe.mp4';
-import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
 
 function Hero() {
   return (
