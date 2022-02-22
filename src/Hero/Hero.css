@@ -1,0 +1,40 @@
+#videoHeroTextoBoton{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify-items: center; */
+
+}
+/* TODO: SACAR ESTA PARTE ya que no hace falta aplicarselo al video
+ .react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  } */
+
+  /* si quere que el ancho del video sea del 100% tenes que pisar "FORZAR" el valor por defecto del componente original */
+  .react-player {
+    height: auto !important;
+  }
+
+
+  #textoBotonHero{
+      /* TODO: sacar el padding para que quede centrado 
+      padding-top: 20%;*/
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+  }
+  /* centramos el texto del titulo para que siempre se mantenga en el medio */
+  #textoBotonHero h3 {
+    text-align: center;
+  }
+  #boton{
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+  }
