@@ -18,13 +18,14 @@ function Hero() {
           color="#fff"
           position= "absolute"
         >
-        <div id='textoBotonHero'>
+        <div id='textoBoton'>
           <h3>Preparate para un viaje super magico</h3>
-        </div>
         <Button color="primary" variant="contained" id='boton'>
           Click Me
         </Button>
+        </div>
       </Box>
+      
       <ReactPlayer
         url={heroVideo}
         className='react-player'

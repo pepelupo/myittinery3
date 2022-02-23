@@ -1,0 +1,7 @@
+#titulos{
+    display: flex;
+    /* align-items: center; */
+    /* justify-items: center; */
+    /* justify-self: center; */
+    background-color: rgba(25, 82, 118, 0.748);
+}

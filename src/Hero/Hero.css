@@ -1,10 +1,19 @@
+
+
+
 #videoHeroTextoBoton{
     position: relative;
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* justify-items: center; */
+    background-color: #282c34;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: start;
+    font-size: calc(10px + 2vmin);
+    color: black;
 
 }
 /* TODO: SACAR ESTA PARTE ya que no hace falta aplicarselo al video
@@ -20,10 +29,12 @@
   }
 
 
-  #textoBotonHero{
-      /* TODO: sacar el padding para que quede centrado 
-      padding-top: 20%;*/
+  #textoBoton{
+      /* TODO: sacar el padding para que quede centrado  */
+      /* padding-top: 20%; */
       z-index: 100;
+      width: 100vw;
+      text-align: center;
       align-items: center;
       justify-content: center;
       justify-items: center;
@@ -35,6 +46,6 @@
   #boton{
     z-index: 100;
     align-items: center;
-    justify-content: center;
-    justify-items: center;
+    justify-content: right;
+    justify-items: right;
   }

@@ -1,0 +1,51 @@
+
+
+.footerContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color:cornflowerblue;
+    align-items: flex-start;
+    padding: 1vw;
+}
+
+.descripcionFooter{
+display: inline!important;
+display: flex;
+flex-direction: row;
+justify-self: center;
+max-width: 50vw;
+}
+
+.ListadoLinksFooter{
+ min-width: 15px
+}
+
+.links{
+text-decoration: none;
+}
+
+.footerCopyright{
+    display: flex;
+    justify-content: flex-end;
+
+
+}
+.titleLinksFooter{
+    /* display: inline; */
+}
+
+.Map{
+    display: flex;
+    height: 100%;
+    justify-content: center;    
+    align-self: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FooterMap{
+width: 15vw;
+height: 20vh;
+}
+

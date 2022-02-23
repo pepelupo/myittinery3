@@ -1,21 +1,14 @@
 import './App.css';
-import Hero from './Hero/Hero'
-import Carousel from './Carousel/Carousel';
 import Footer from './Footer/Footer';
 import ResponsiveAppBar from './Navbar/Navbar';
+import Main from './Main/Main';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <ResponsiveAppBar/>
-        {/* Agregamos un contenedor para poder ordenar los componentes por fuera del navbar */}
-        <div className="container">
-          <Hero/>
-          <Carousel/>
+          <ResponsiveAppBar/>
+          <Main/>
           <Footer/>
-        </div>
-      </header>
     </div>
   );
 }
