@@ -14,6 +14,7 @@ import './Carousel.css'
 function Carrusel() {
     return (
       <>
+                <h2 id='titulos'>Mira las ciudades!</h2>
         <Swiper
         slidesPerGroup={4}
           slidesPerView={4}

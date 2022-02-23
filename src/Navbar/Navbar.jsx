@@ -9,11 +9,12 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
+import Tooltip from '@mui/material/Tooltip';    
 import MenuItem from '@mui/material/MenuItem';
+import './Navbar.css'
 
-const pages = ['Products', 'Pricing', 'Blog'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const pages = ['Pepino', 'Tomate', 'Albaca'];
+const settings = ['Perfil', 'Configuracion', 'Logout'];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -36,18 +37,20 @@ const ResponsiveAppBar = () => {
 
   return (
     <AppBar position="static">
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <Typography
+      <Container maxWidth="xl" className='Toolbar'>
+        <Toolbar disableGutters  className='Toolbar'>
+          {/* Este es el logo cuando esta expandido */}
+          <Typography 
             variant="h6"
             noWrap
             component="div"
-            sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
+            sx={{ mr: 2, display: { xs: 'none', md: 'none' } }}
           >
-            LOGO
+            Pepelupo
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+{/* Esto es el logo de las tres rayitas (hamburger) */}
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex' } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -58,7 +61,9 @@ const ResponsiveAppBar = () => {
             >
               <MenuIcon />
             </IconButton>
+{/* Esto es el menu desplegable */}
             <Menu
+  // Estas son las setting del menu desplegable
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
@@ -73,25 +78,28 @@ const ResponsiveAppBar = () => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' },
+                display: { xs: 'flex', md: 'flex' },
               }}
             >
+              {/* Esto trae las secciones que cargamos en pages al menu desplegable */}
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center"><a href=""></a>{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
+  {/* Esto es el logo cuando achico */}
           <Typography
             variant="h6"
             noWrap
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
+            sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex' } }}
           >
-            LOGO
+            My Itinery
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          {/* Esto es el menu desplegado en el medio */}
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'none' } }}>
             {pages.map((page) => (
               <Button
                 key={page}
@@ -110,6 +118,7 @@ const ResponsiveAppBar = () => {
               </IconButton>
             </Tooltip>
             <Menu
+            // Estas son las settings del menu de usuario
               sx={{ mt: '45px' }}
               id="menu-appbar"
               anchorEl={anchorElUser}
